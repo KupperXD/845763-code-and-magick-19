@@ -34,7 +34,7 @@ var getRandomInt = function (min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 };
 
-var renderStatistics = function (ctx, names, times) {
+window.renderStatistics = function (ctx, names, times) {
   renderRectangle(ctx, RECTANGLE_X + GAP, RECTANGLE_Y + GAP, 'rgba(0, 0, 0, 0.7)');
   renderRectangle(ctx, RECTANGLE_X, RECTANGLE_Y, '#fff');
 
